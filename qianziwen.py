@@ -323,13 +323,13 @@ print('\n千字文成功:', len(article_list), '\n全部成语: \n', '，'.join(
 #精准接龙版本
 article_list = []
 while len(article_list) < 250:
-	article_list = generate_idiom_jielong(idiom_head_list, word_dict, freq_num=10, article_list_len=75, max_try_count=150)
+	article_list = generate_idiom_jielong(idiom_head_list, word_dict, freq_num=5, article_list_len=80, max_try_count=200)
 print('\n\n接龙成功! 全部成语：', '，'.join(article_list))
 
 #同音接龙版本
 article_list = []
 while len(article_list) < 250:
-	article_list = generate_idiom_pinyin_jielong(idiom_pinyin_head_list, word_dict, freq_num=10, article_list_len=70, max_try_count=100)
+	article_list = generate_idiom_pinyin_jielong(idiom_pinyin_head_list, word_dict, freq_num=5, article_list_len=80, max_try_count=200)
 print('\n\n接龙成功! 全部成语：', '，'.join(article_list))
 
 
